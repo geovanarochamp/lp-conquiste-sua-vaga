@@ -11,7 +11,7 @@
     --secondary-color: #2d343d;
     --tertiary-color: #164669;
     --light-color: #fff;
-    --dark-color: #232931;
+    --dark-color: #282f38;
 
     --light-primary: #f92f47;
     --dark-primary: #ae2031;
@@ -113,6 +113,7 @@ section h3 {
     margin-bottom: 2.4rem;
     font-size: 3.6rem;
     font-weight: normal;
+    text-align: center;
 }
 
 .content h2 span, .content h4 span {
@@ -135,6 +136,10 @@ section h3 {
     align-items: center;
 }
 
+#method .content h3 {
+    text-align: left;
+}
+
 #method .content img {
     width: 45%;
 }
@@ -143,7 +148,6 @@ section h3 {
     font-size: 3.6rem;
     font-weight: bold;
     text-transform: uppercase;
-    text-align: center;
 }
 
 #risk .content {
@@ -169,7 +173,8 @@ section h3 {
     text-align: center;
 }
 
-#how-works .icon-box-wrapper {
+#how-works .icon-box-wrapper,
+#inside-csv .icon-box-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 3.2rem;
@@ -191,12 +196,29 @@ section h3 {
     margin-top: 1.2rem;
 }
 
-.icon-box svg {
+.icon-box svg, .icon-box img {
     transition: transform .3s;
 }
 
-.icon-box svg:hover {
+.icon-box svg:hover, .icon-box img:hover {
     transform: scale(1.1);
+}
+
+#inside-csv .icon-box-wrapper {
+    justify-content: center;
+}
+
+#inside-csv .icon-box-wrapper img {
+    height: 30rem;
+    width: 40rem;
+}
+
+#inside-csv .content .icon-box-wrapper .icon-box h4 {
+    font-size: 2.4rem;
+}
+
+#inside-csv .content .icon-box-wrapper .icon-box p {
+    font-size: 1.6rem;
 }
 
 footer {
