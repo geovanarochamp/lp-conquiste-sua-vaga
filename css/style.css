@@ -6,4 +6,122 @@
 
 :root {
     font-size: 62.5%; /* 10px */
+
+    --primary-color: #d33245;
+    --secondary-color: #2d343d;
+    --tertiary-color: #164669;
+    --light-color: #fff;
+    --dark-color: #232931;
+
+    --light-primary: #f92f47;
+    --dark-primary: #ae2031;
+    --p-color: #b2b2b2;
 }
+
+body {
+    font-size: 1.6rem;
+    background-color: var(--secondary-color);
+    color: var(--light-color);
+}
+
+body, button, input {
+    font-family: 'Open Sans', sans-serif;
+} 
+
+p {
+    color: var(--p-color);
+    margin-bottom: .8rem;
+}
+
+header {
+    width: 70vw;
+    margin: auto;
+
+    padding: 4.8rem 0;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+}
+
+header img {
+    width: 60px;
+}
+
+main {
+    margin-top: 4rem;
+    text-align: center;
+}
+
+main h1 {
+    font-size: 7.2rem;
+}
+
+main p {
+    margin-top: .8rem;
+    font-size: 2.2rem;
+    letter-spacing: .2rem;
+}
+
+main button {
+    margin-top: 5rem;
+    margin-bottom: 12rem;
+    padding: 1.5rem 3rem;
+
+    background: var(--primary-color);
+    border-radius: 4px;
+    border: none;
+    border-bottom: 6px solid #ae2031;
+    outline: none;
+
+    color: var(--light-color);
+    font-weight: bold;
+    font-size: 1.6rem;
+
+    transition: background-color .3s;
+}
+
+main button:hover {
+    background-color: var(--dark-primary);
+}
+
+main button:active {
+    background-color: var(--light-primary);
+}
+
+.content {
+    width: 70vw;
+    margin: auto;
+}
+
+.dark-bg {
+    background-color: var(--dark-color);
+}
+
+section {
+    padding: 6rem 0;
+}
+
+.content h2 {
+    margin-bottom: 2.4rem;
+    font-size: 2.8rem;
+    font-weight: normal;
+}
+
+.content h2 span {
+    color: var(--light-primary);
+}
+
+#pains .content {
+    display: flex;
+    gap: 2rem;
+}
+
+#pains .content img {
+    width: 50%;
+}
+
