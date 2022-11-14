@@ -97,7 +97,7 @@ main button:active {
 }
 
 .content {
-    width: 80vw;
+    width: clamp(80vw, 80vw, 95vw);
     margin: auto;
 }
 
@@ -209,8 +209,7 @@ section h3 {
 }
 
 #inside-csv .icon-box-wrapper img {
-    height: 30rem;
-    width: 40rem;
+    width: 100%;
 }
 
 #inside-csv .content .icon-box-wrapper .icon-box h4 {
@@ -220,6 +219,78 @@ section h3 {
 #inside-csv .content .icon-box-wrapper .icon-box p {
     font-size: 1.6rem;
 }
+
+#inside-csv .content .icon-box-wrapper .icon-box ul li {
+    text-align: left;
+    margin: 3rem;
+    color: var(--p-color);
+}
+
+#about-expert .content {
+    margin-top: 4rem;
+    display: flex;
+    gap: 3.2rem;
+}
+
+#about-expert .content h4 {
+    font-size: 2.4rem;
+    margin-bottom: 1.2rem;
+}
+
+#about-expert .content a img {
+    margin-right: 2.4rem;
+    transition: filter .3s;
+    cursor: pointer;
+}
+
+#about-expert .content img:hover {
+    filter: brightness(.8);
+}
+
+#about-expert .content ul li {
+    color: var(--p-color);
+    margin-left: 6rem;
+    line-height: 3.2rem;
+}
+
+#about-expert .content + .content {
+    margin-top: 8rem;
+}
+
+#about-expert .content + .content img{
+    width: 300px;
+    border-radius: 9999px;
+}
+
+#for-who .content {
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+}
+
+#for-who .content-left, #for-who .content-right {
+    text-align: center;
+    border: 2px solid var(--border-iconbox);
+    border-radius: 12px;
+    padding: 6rem;
+}
+
+
+#for-who img {
+    width: 40%;
+}
+
+.big-icon-list {
+    display: flex;
+    justify-content: left;
+    text-align: left;
+    gap: .8rem;
+}
+
+.big-icon-list svg {
+    width: 40%;
+}
+
 
 footer {
     padding: 1.5rem 0;
