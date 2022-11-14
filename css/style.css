@@ -16,6 +16,8 @@
     --light-primary: #f92f47;
     --dark-primary: #ae2031;
     --p-color: #c4c4c4;
+
+    --border-iconbox: rgb(69, 77, 89);
 }
 
 body {
@@ -107,13 +109,13 @@ section {
     padding: 10rem 0;
 }
 
-.content h3 {
+section h3 {
     margin-bottom: 2.4rem;
-    font-size: 4rem;
+    font-size: 3.6rem;
     font-weight: normal;
 }
 
-.content h2 span {
+.content h2 span, .content h4 span {
     color: var(--light-primary);
 }
 
@@ -137,13 +139,8 @@ section {
     width: 45%;
 }
 
-#risk {
-    background-color: var(--dark-primary);
-}
-
 #risk h3 {
-    margin-bottom: 2.4rem;
-    font-size: 5.2rem;
+    font-size: 3.6rem;
     font-weight: bold;
     text-transform: uppercase;
     text-align: center;
@@ -158,13 +155,46 @@ section {
 }
 
 #risk .content h4 {
-    font-size: 3.6rem;
+    margin-bottom: 2.4rem;
+    font-size: 3.2rem;
     text-align: left;
     font-weight: normal;
 }
 
-
-
 #risk .content img {
     width: auto;
+}
+
+#how-works {
+    text-align: center;
+}
+
+#how-works .icon-box-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 3.2rem;
+    margin-top: 5rem;
+}
+
+.icon-box {
+    text-align: center;
+    align-items: center;
+
+    border: 2px solid var(--border-iconbox);
+    border-radius: 4px;
+
+    padding: 3rem;
+}
+
+.icon-box p {
+    font-size: 1.8rem;
+    margin-top: 1.2rem;
+}
+
+.icon-box svg {
+    transition: transform .3s;
+}
+
+.icon-box svg:hover {
+    transform: scale(1.1);
 }
