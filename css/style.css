@@ -226,8 +226,13 @@ section h3 {
     color: var(--p-color);
 }
 
+#about-expert .separator {
+    border-bottom: 1px solid rgba(100, 100, 100, .8);
+    width: 100%;    
+}
+
 #about-expert .content {
-    margin-top: 4rem;
+    margin-top: 8rem;
     display: flex;
     gap: 3.2rem;
 }
@@ -275,20 +280,65 @@ section h3 {
     padding: 6rem;
 }
 
+#for-who .img-wrapper {
+    height: 23rem;
+    margin-bottom: 3.2rem;
+}
 
 #for-who img {
-    width: 40%;
+    height: 100%;
+}
+
+#for-who svg {
+    width: fit-content;
 }
 
 .big-icon-list {
     display: flex;
     justify-content: left;
+    align-items: center;
     text-align: left;
-    gap: .8rem;
+    gap: 1.5rem;
+
+    margin-bottom: 1.5rem;
 }
 
-.big-icon-list svg {
-    width: 40%;
+#depositions .depo-item {
+    margin-top: 6rem;
+    display: flex;
+    align-items: center;
+    gap: 3.2rem;
+}
+
+#depositions iframe {
+    border-radius: 8px;
+    box-shadow: var(--dark-color) 1.95px 1.95px 2.6px;
+}
+
+#depositions .depo-highlight {
+    margin: 1rem 0;
+    font-size: 2.4rem;
+}
+
+#depositions .depo-author a {
+    margin-top: 3rem;
+
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    text-decoration: none;
+    color: var(--p-color);
+}
+
+#depositions .depo-author a:hover {
+    color: var(--light-color);
+}
+
+#depositions .separator {
+    border-bottom: 1px solid rgba(100, 100, 100, .8);
+    margin: 8rem 0;
+    width: 100%; 
 }
 
 
