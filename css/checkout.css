@@ -16,11 +16,12 @@
 
 
 .cc-area {
-    width: fit-content;
+    max-width: 96rem;
     margin: 8rem auto;
     padding: 8rem;
 
     display: flex;
+    justify-content: center;
     align-items: center;
     gap: 4rem;
 
@@ -35,8 +36,8 @@
 
 .cc-datas {    
     position: absolute;
-    bottom: 28px;
-    left: 25px;
+    bottom: 2.8rem;
+    left: 2.5rem;
 
     display: flex;
     flex-direction: column;
@@ -47,7 +48,6 @@
     position: absolute;
     right: 0;
     top: -65px;
-
 }
 
 .cc-datas .cc-number-view{
@@ -118,7 +118,11 @@ form input:focus {
 form .col-2 {
     width: 100%;
     display: flex;
-    gap: 1.4rem;
+    gap: 1.6rem;
+}
+
+form .col-2 .input-wrapper {
+    width: 100%;
 }
 
 form a {
@@ -151,4 +155,53 @@ form a:active {
 .confirmation-msg {
     margin: 8rem auto;
     text-align: center;
+}
+
+@media (max-width: 1050px) {
+    .cc-area {
+        width: 100%;
+        display: inline-block;
+        margin: 8rem auto;    
+    }
+
+    .cc-view {
+        margin-bottom: 2.8rem;
+    }
+}
+
+@media (max-width: 720px) {
+    .cc-area {
+        padding: 3rem;
+    }
+}
+
+@media (max-width: 590px) {
+    .cc-view img {
+        width: 100%;
+    }
+
+   form .col-2 {
+        flex-direction: column;
+    }
+
+    .cc-datas {    
+        position: absolute;
+        bottom: 1rem;
+        left: 1.5rem;
+    
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .cc-flag {
+        position: absolute;
+        right: 0;
+        top: -35px;
+    }
+
+    .cc-datas .col-3 {
+        display: flex;
+        gap: 7rem;
+    }
 }
