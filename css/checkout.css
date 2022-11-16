@@ -7,6 +7,13 @@
     margin: auto;
 }
 
+.title {
+    text-align: center;
+    background-color: rgba(0, 0, 0, .2);
+    padding: 4rem;
+}
+
+
 .cc-area {
     width: fit-content;
     margin: 8rem auto;
@@ -28,11 +35,18 @@
 .cc-datas {    
     position: absolute;
     bottom: 28px;
-    left: 20px;
+    left: 25px;
 
     display: flex;
     flex-direction: column;
     gap: 1.4rem;
+}
+
+.cc-flag {
+    position: absolute;
+    right: 0;
+    top: -65px;
+
 }
 
 .cc-datas .cc-number-view{
@@ -92,6 +106,8 @@ form input {
     border-radius: 6px;
     padding-left: 1rem;
     color: #fff;
+
+    text-transform: uppercase;
 }
 
 form input:focus {    
