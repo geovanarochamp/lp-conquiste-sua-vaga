@@ -110,7 +110,7 @@ section {
 }
 
 section h3 {
-    margin-bottom: 2.4rem;
+    margin-bottom: 3.6rem;
     font-size: 3.6rem;
     font-weight: normal;
     text-align: center;
@@ -340,6 +340,48 @@ section h3 {
     margin: 8rem 0;
     width: 100%; 
 }
+
+details {
+    width: 50%;
+    margin: 0 auto ;
+    background: #242b33;
+    margin-bottom: 1rem;
+    box-shadow: 0 .1rem 1rem -.5rem rgba(0,0,0,.4);
+    border-radius: 4px;
+    overflow: hidden;
+  }
+  
+  summary {
+    padding: 1rem;
+    display: block;
+    background: #1d232a;
+    padding-left: 2.2rem;
+    position: relative;
+    cursor: pointer;
+
+    font-weight: 600;
+  }
+  
+  summary:before {
+    content: '';
+    border: .4rem solid;    
+    border-color: transparent transparent transparent #fff;
+    position: absolute;
+    top: 1.6rem;
+    left: 1rem;
+    transform: rotate(0);
+    transform-origin: .2rem 50%;
+    transition: .25s transform ease;
+  }
+  
+  /* THE MAGIC 🧙‍♀️ */
+  details[open] > summary:before {
+    transform: rotate(90deg);
+  }
+  
+  details > p {
+    padding: 2rem;
+  }
 
 
 footer {
