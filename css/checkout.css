@@ -1,8 +1,9 @@
-#checkout {
-    height: 100vh;
+.page-container {
+    position: relative;
+    min-height: 94vh;
 }
 
-.container-ck {
+.content-wrapper {
     width: 80vw;
     margin: auto;
 }
@@ -120,7 +121,8 @@ form .col-2 {
     gap: 1.4rem;
 }
 
-form button {
+form a {
+    text-decoration: none;
     margin-top: 2rem;
     padding: 1.5rem 3rem;
     background-color: #0c0e12;
@@ -128,8 +130,25 @@ form button {
     border-radius: 8px;
 
     color: #fff;
+    text-align: center;
     text-transform: uppercase;
     font-weight: 600;
     font-size: 1.4rem;
     letter-spacing: .1rem;
+
+    transition: transform .5s;
+    transition: filter .3s;
+}
+
+form a:hover {
+    transform: scale(1.03);
+}
+
+form a:active {
+    filter: brightness(1.1);
+}
+
+.confirmation-msg {
+    margin: 8rem auto;
+    text-align: center;
 }
