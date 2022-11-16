@@ -17,7 +17,7 @@
     --dark-primary: #ae2031;
     --p-color: #c4c4c4;
 
-    --border-iconbox: rgb(69, 77, 89);
+    --border-iconbox: #454d59;
 }
 
 body {
@@ -37,7 +37,7 @@ p {
 
 header {
     width: 80vw;
-    margin: auto;
+    margin: 0 auto;
 
     padding: 4.8rem 0;
 

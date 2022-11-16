@@ -8,10 +8,10 @@ Este projeto tem por objetivo mapear e praticar os conhecimentos já adquiridos 
 
 - [X] Salvar os __assets__ que podem ser utilizados na nova página
 - [X] Iniciar HTML com os metadados e inserir favicon
-- [ ] Criar o HTML com os textos já existentes nas páginas atuais da mentoria
-- [ ] Estilizar o CSS da LP
-- [ ] Criar o HTML do Checkout
-- [ ] Estilizar o Checkout
+- [X] Criar o HTML com os textos já existentes nas páginas atuais da mentoria
+- [X] Estilizar o CSS da LP
+- [X] Criar o HTML do Checkout
+- [X] Estilizar o Checkout
 - [ ] Dinamizar com JavaScript
 - [ ] Criar o HTML da Página de Obrigado
 - [ ] Estilizar a Página de Obrigado

@@ -1,0 +1,119 @@
+#checkout {
+    height: 100vh;
+}
+
+.container-ck {
+    width: 80vw;
+    margin: auto;
+}
+
+.cc-area {
+    width: fit-content;
+    margin: 8rem auto;
+    padding: 8rem;
+
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+
+    background: #1d232a;
+    border-radius: 8px;
+    border: 2px solid #363d48;
+}
+
+.cc-view {
+    position: relative;
+}
+
+.cc-datas {    
+    position: absolute;
+    bottom: 28px;
+    left: 20px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1.4rem;
+}
+
+.cc-datas .cc-number-view{
+    font-size: 2.4rem;
+    font-weight: bold;
+}
+
+.cc-datas h5{
+    font-weight: bold;
+    font-size: 1.8rem;
+    line-height: 2.9rem;
+    letter-spacing: .05rem;
+    text-transform: uppercase;
+    
+    color: #fff;
+}
+
+.cc-datas p {
+    font-size: 10px;
+    line-height: 12px;
+    color: #cacaca;
+    margin-bottom: 0;
+}
+
+.cc-datas .col-3 {
+    display: flex;
+    gap: 11rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+}
+
+.input-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+form label {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: .15rem;
+
+    letter-spacing: 0.01px;
+    text-transform: uppercase;
+}
+
+form input {
+    height: 40px;
+    background: #161a20;
+    border: 1.5px solid #2f3640;
+    outline: none;
+    border-radius: 6px;
+    padding-left: 1rem;
+    color: #fff;
+}
+
+form input:focus {    
+    border: 2px solid #59606d;
+}
+
+form .col-2 {
+    width: 100%;
+    display: flex;
+    gap: 1.4rem;
+}
+
+form button {
+    margin-top: 2rem;
+    padding: 1.5rem 3rem;
+    background-color: #0c0e12;
+    border: none;
+    border-radius: 8px;
+
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1.4rem;
+    letter-spacing: .1rem;
+}
