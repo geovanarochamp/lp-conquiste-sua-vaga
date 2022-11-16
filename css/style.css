@@ -61,7 +61,7 @@ main {
 }
 
 main h1 {
-    font-size: 7.2rem;
+    font-size: 7.1rem;
 }
 
 main h2 {
@@ -99,7 +99,7 @@ button:active {
 }
 
 .content {
-    width: clamp(80vw, 80vw, 95vw);
+    width: 80vw;
     margin: auto;
 }
 
@@ -152,6 +152,18 @@ section h3 {
     text-transform: uppercase;
 }
 
+#how-works {
+    text-align: center;
+}
+
+#how-works .icon-box-wrapper,
+#inside-csv .icon-box-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 3.2rem;
+    margin-top: 5rem;
+}
+
 #risk .content {
     text-align: center;
     display: flex;
@@ -169,18 +181,6 @@ section h3 {
 
 #risk .content img {
     width: auto;
-}
-
-#how-works {
-    text-align: center;
-}
-
-#how-works .icon-box-wrapper,
-#inside-csv .icon-box-wrapper {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 3.2rem;
-    margin-top: 5rem;
 }
 
 .icon-box {
@@ -242,7 +242,7 @@ section h3 {
 }
 
 #about-expert .content {
-    margin-top: 8rem;
+    margin-top: 2rem;
     display: flex;
     gap: 3.2rem;
 }
@@ -280,10 +280,11 @@ section h3 {
 #for-who .content {
     display: flex;
     justify-content: center;
-    gap: 4rem;
+    gap: 3rem;
 }
 
 #for-who .content-left, #for-who .content-right {
+    width: 50%;
     text-align: center;
     border: 2px solid var(--border-iconbox);
     border-radius: 12px;
@@ -291,7 +292,7 @@ section h3 {
 }
 
 #for-who .img-wrapper {
-    height: 23rem;
+    height: 20rem;
     margin-bottom: 3.2rem;
 }
 
@@ -436,4 +437,76 @@ footer {
     text-align: center;
     color: #a2a2a2;
     background-color: #1d232a;  
+}
+
+@media (max-width: 890px) {
+    .content {
+        width: 95vw;
+        margin: auto;        
+    }
+
+    main {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 690px) {
+
+    header {
+        font-size: 1.3rem;
+    }
+
+    main h1 {
+        font-size: 5rem;
+    }
+
+    #method .content, #method .content h3 {
+        display: inline-block;
+        text-align: center;
+    }
+
+    #how-works .icon-box-wrapper,
+    #inside-csv .icon-box-wrapper {
+        display: inline-block;
+    }
+
+    #how-works .icon-box,
+    #inside-csv .icon-box {
+        margin-top: 2rem;
+    }
+
+    #risk .content {
+        display: inline-block;
+    }
+
+    #risk .content h4 {
+        text-align: center;
+    }
+
+    #about-expert .content {
+        display: inline-block;
+        padding: 5px;
+    }
+
+    #about-expert .content h4 {
+        margin: 2rem auto;
+    }
+
+    #for-who .content {
+        display: inline-block;
+    }
+
+    #for-who .content-left, #for-who .content-right {
+        width: 100%;
+        padding: 4rem;
+        margin-bottom: 2rem;
+    }
+
+    #depositions .depo-item {
+        display: inline-block;
+    }
+
+    details {
+        width: 90%
+    }        
 }
