@@ -54,10 +54,23 @@ header img {
     width: 60px;
 }
 
-main {
-    margin-top: 4rem;
+main {    
+    padding-top: 4rem;
     text-align: center;
-    margin-bottom: 12rem;
+    padding-bottom: 12rem;
+}
+
+main::before {
+    content: "";
+    background-image: url("https://images.unsplash.com/photo-1517180102446-f3ece451e9d8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity: .1;
 }
 
 main h1 {
@@ -71,7 +84,9 @@ main h2 {
     letter-spacing: .2rem;
 }
 
-button {
+.cta-button {
+    text-decoration: none;
+    width: fit-content;
     display: flex;
     margin: 5rem auto 1rem;
     padding: 1.5rem 3rem;
@@ -90,11 +105,11 @@ button {
     transition: background-color .3s;
 }
 
-button:hover {
+.cta-button:hover {
     background-color: var(--dark-primary);
 }
 
-button:active {
+.cta-button:active {
     background-color: var(--light-primary);
 }
 
