@@ -503,6 +503,12 @@ footer {
         padding: 5px;
     }
 
+    #about-expert .content img,
+    #about-expert .content + .content img {
+        width: 80vw;
+        margin: auto;
+    }
+
     #about-expert .content h4 {
         margin: 2rem auto;
     }
@@ -519,6 +525,10 @@ footer {
 
     #depositions .depo-item {
         display: inline-block;
+    }
+
+    #depositions .depo-item iframe {
+        width: 90vw;
     }
 
     details {
