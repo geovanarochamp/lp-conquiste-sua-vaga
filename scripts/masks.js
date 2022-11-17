@@ -1,9 +1,16 @@
 $(document).ready(function() {        
     $('#cc-number').mask("0000 0000 0000 0000")
-       
-    // $('#cc-name').mask("/[a-zA-Z]/")
+           
+    const options = {
+        'translation': {
+            A : {
+                pattern: /^[A-Za-z\s]*$/
+            }
+        }
+    }
+    $('#cc-name').mask("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA", options)
         
-    $('#cc-expiration').mask("00/00")
+    $('#cc-expiration').mask("00/00", {placeholder: 'MM/AA'})
    
     $('#cc-cvc').mask("0000")
 })

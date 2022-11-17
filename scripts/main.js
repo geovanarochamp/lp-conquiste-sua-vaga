@@ -13,7 +13,11 @@ nameView = document.querySelector('.name-view h5')
 
 ccName.addEventListener('input', handleCcName)
 function handleCcName () {
-    nameView.textContent = (ccName.value == "") ? "Nome Completo" : ccName.value
+    if (ccName.value == "") {
+        nameView.textContent = "Nome Completo"
+    } else {
+        nameView.textContent = ccName.value
+    } 
 }
 
 ccExpiration = document.querySelector('#cc-expiration')

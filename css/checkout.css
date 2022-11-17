@@ -126,30 +126,32 @@ form .col-2 .input-wrapper {
 }
 
 form a {
-    text-decoration: none;
+    width: 100%;
+    height: 4rem;
+}
+
+form .btnFinished {
     margin-top: 2rem;
-    padding: 1.5rem 3rem;
+    width: 100%;
+    height: 4rem;
+
     background-color: #0c0e12;
     border: none;
     border-radius: 8px;
 
     color: #fff;
-    text-align: center;
     text-transform: uppercase;
     font-weight: 600;
     font-size: 1.4rem;
     letter-spacing: .1rem;
 
+    cursor: pointer;
+
     transition: transform .5s;
-    transition: filter .3s;
 }
 
-form a:hover {
+.btnFinished:hover {
     transform: scale(1.03);
-}
-
-form a:active {
-    filter: brightness(1.1);
 }
 
 .confirmation-msg {

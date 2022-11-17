@@ -63,26 +63,26 @@
                     </div>
                 </div>
 
-                <form action="">
+                <form action="/typ.html" id="cc-form">
                     <div class="input-wrapper">
                         <label for="cc-number">Número do cartão</label>
-                        <input id="cc-number" type="text">
+                        <input id="cc-number" type="text" required>
                     </div>
                     <div class="input-wrapper">
                         <label for="cc-name">Nome do titular</label>
-                        <input id="cc-name" type="text">
+                        <input id="cc-name" type="text" required>
                     </div>
                     <div class="col-2">
                         <div class="input-wrapper">
                             <label for="cc-expiration">Expiração</label>
-                            <input id="cc-expiration" type="text">
+                            <input id="cc-expiration" type="text" required>
                         </div>
                         <div class="input-wrapper">
                             <label for="cc-cvc">CVC</label>
-                            <input id="cc-cvc" type="text">
+                            <input id="cc-cvc" type="text" required>
                         </div>
                     </div>
-                    <a href="./typ.html">Finalizar matricula</a>
+                    <button class="btnFinished">Finalizar matricula</button>
                 </form>
 
             </div>            
@@ -95,7 +95,7 @@
 
     <script type="text/javascript" src="scripts/jquery-3.6.1.min.js"></script>
     <script type="text/javascript" src="scripts/jquery.mask.js"></script>
-    <script type="text/javascript" src="scripts/main.js"></script>
     <script type="text/javascript" src="scripts/masks.js"></script>
+    <script type="text/javascript" src="scripts/main.js"></script>
 </body>
 </html>

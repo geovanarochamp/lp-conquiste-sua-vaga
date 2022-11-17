@@ -12,7 +12,7 @@ Este projeto tem por objetivo mapear e praticar os conhecimentos já adquiridos 
 - [X] Estilizar o CSS da LP
 - [X] Criar o HTML do Checkout
 - [X] Estilizar o Checkout
-- [ ] Dinamizar com JavaScript
+- [X] Dinamizar com JavaScript
 - [X] Criar o HTML da Página de Obrigado
 - [X] Estilizar a Página de Obrigado
 
