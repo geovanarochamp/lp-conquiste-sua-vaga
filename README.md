@@ -22,6 +22,7 @@ Este projeto tem por objetivo mapear e praticar os conhecimentos já adquiridos 
 - HTML
 - CSS
 - JavaScript
+- jQuery Mask Plugin
 
 ## 📲 Contato
 geovana.rocha.martins@gmail.com
