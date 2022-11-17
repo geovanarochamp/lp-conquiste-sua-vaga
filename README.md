@@ -13,8 +13,8 @@ Este projeto tem por objetivo mapear e praticar os conhecimentos já adquiridos 
 - [X] Criar o HTML do Checkout
 - [X] Estilizar o Checkout
 - [ ] Dinamizar com JavaScript
-- [ ] Criar o HTML da Página de Obrigado
-- [ ] Estilizar a Página de Obrigado
+- [X] Criar o HTML da Página de Obrigado
+- [X] Estilizar a Página de Obrigado
 
 
 ## 🛠️Tecnologias
@@ -22,7 +22,6 @@ Este projeto tem por objetivo mapear e praticar os conhecimentos já adquiridos 
 - HTML
 - CSS
 - JavaScript
-- IMask
 
 ## 📲 Contato
 geovana.rocha.martins@gmail.com
